@@ -19,6 +19,7 @@ First was the task of inspecting the website in order to find the locations of t
 ##### Note - 
 *1) The csv file uploaded here is a slightly cleaner version of the original, but the file has only been formatted for a better presentation and readeability of the data and the extracted real content was not modified by any means.*
 *<br>2) The data may contain some missing values.*
+*<br>3) Please find all the other specifications regarding the extracted data in the Jupyter Notebook itself.*
 
 #### The data:
 The final data (columns) saved in csv file includes:
