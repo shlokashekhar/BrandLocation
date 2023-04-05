@@ -1,6 +1,6 @@
 # Assignment Prompt: Retail Store
 
-Location Scraper
+#### Location Scraper
 As a data scientist, it's important to know how to scrape data from various sources,
 including websites. For this assignment, your task is to scrape the locations of your
 favourite retail brand in India and extract the following information:
