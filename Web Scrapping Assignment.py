@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import requests
 import json
 import csv
@@ -16,13 +13,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-# In[2]:
-
-
 url = "https://api.pantaloons.com/store/getCurrentStore"
-
-
-# In[3]:
 
 
 payload = json.dumps({
@@ -65,50 +56,23 @@ headers = {
 }
 
 
-# In[4]:
-
-
 data = requests.post(url, headers=headers, data=payload)
 
 print(data.text.encode('utf8'))
 
-
-# In[5]:
-
-
 data.status_code
-
-
-# In[6]:
-
 
 stores = json.loads(data.text)
 
-
-# In[7]:
-
-
 stores['results']
 
-
-# In[8]:
-
-
 stores.keys()
-
-
-# In[9]:
-
 
 del stores['success']
 del stores['msg']
 del stores['cache']
 del stores['hash']
 del stores['ttl']
-
-
-# In[10]:
-
 
 with open('Pantaloon_Locations.csv', 'w', encoding = 'utf-8') as pt:
     
@@ -161,44 +125,19 @@ with open('Pantaloon_Locations.csv', 'w', encoding = 'utf-8') as pt:
         
         writer.writerow(row)
 
-
-# In[11]:
-
-
 pantaloon = pd.read_csv('Pantaloon_Locations.csv')
 
-
-# In[12]:
-
-
 pantaloon.head()
-
-
-# In[13]:
-
 
 print(pantaloon.shape)
 print(pantaloon.dtypes)
 
-
-# In[14]:
-
-
 pantaloon.isna().sum()
 
-
-# In[15]:
-
-
 pantaloon.city.value_counts().head(10)
-
-
-# In[16]:
-
 
 plt.figure(figsize = (12,5), dpi = 120)
 city_count = pantaloon['city'].value_counts(normalize=True).head(10)
 sns.barplot(city_count.index, city_count, order = city_count.index)
 plt.xlabel('City')
 plt.ylabel('Fraction/Percent')
-
