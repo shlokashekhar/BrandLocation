@@ -36,4 +36,4 @@ The final data (columns) saved in csv file includes:
 - Closing Time
 
 #### Final Words
-My final product is a result of multiple trail processes till I found the method that worked for me. Web scraping can be done in a number of ways and this is just one of those methods. I had fun during this assigment, thank you. 
+My final product is a result of multiple trail processes till I found the method that worked for me. Web scraping can be done in a number of ways and this is just one of those methods. I had fun doing this assigment, thank you. 
