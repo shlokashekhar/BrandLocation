@@ -18,8 +18,7 @@ Postman - https://www.postman.com/home
 #### How I approached the assignment:
 First was the task of inspecting the website in order to find the locations of the store and connecting to the api. In order to get the data from the api, I used Postman API Platform and lastly, extracted all the data using Jupyter Notebook. Next was task was to save the data into a csv file, a segment of that csv file can be found in the Jupyter Noteboook itself. After that, a bit data analysis was performed in the Notebook to make it more understandable.
 ##### Note - 
-*1) The csv file uploaded here is a slightly cleaner version of the original, but the file has only been formatted for a better presentation and readeability of the data and the real extracted content was not modified by any means. The same changes for type/formatting in the dataset have been made into the Notebook as well*
-<br>*2) Please find all the specifications regarding the extracted data in the Jupyter Notebook itself.*
+*1) The csv file uploaded here is a slightly cleaner version of the original, but the file has only been formatted for a better presentation and readeability of the data and the real extracted content was not modified by any means.*
 
 #### The data:
 The final data (columns) saved in csv file includes:
