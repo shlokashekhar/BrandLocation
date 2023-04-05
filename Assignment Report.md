@@ -3,7 +3,7 @@
 In this assignment, I've used the Pantaloons website (https://www.pantaloons.com) to scape the required data from.
 
 #### Language used:
-Python
+Python (Jupyter Notebook)
 
 #### Extra tools:
 Postman - https://www.postman.com/home
